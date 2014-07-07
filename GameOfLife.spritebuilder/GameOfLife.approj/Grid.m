@@ -97,7 +97,7 @@ static const int GRID_COLUMNS = 10;
     _generation++;
 }
 
-- (void) countNeighbors
+- (int) countNeighbors
 {
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
@@ -134,6 +134,7 @@ static const int GRID_COLUMNS = 10;
                         }
                     }
                 }
+                return currentCreature.livingNeighbors;
             }
         }
     }
@@ -149,7 +150,7 @@ static const int GRID_COLUMNS = 10;
     return isIndexValid;
 }
 
-- (void) updateCreatures;
+- (BOOL) updateCreatures;
 {
     {
         // iterate through the rows
@@ -200,7 +201,7 @@ static const int GRID_COLUMNS = 10;
             }
         }
     }
-        
+    
 }
 
 
