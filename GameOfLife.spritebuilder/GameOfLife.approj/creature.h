@@ -1,8 +1,8 @@
 //
-//  creature.h
+//  Creature.h
 //  GameOfLife
 //
-//  Created by Tianyi Zhang on 02/07/2014.
+//  Created by Tianyi Zhang on 07/07/2014.
 //  Copyright (c) 2014 Apportable. All rights reserved.
 //
 
